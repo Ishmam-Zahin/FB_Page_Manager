@@ -1,0 +1,293 @@
+{
+  "page": {
+    "id": "373058122566124",
+    "name": "Acme Software",
+    "category": "Software company",
+    "about": "We build tools that help small teams ship faster. Founded 2019, fully remote.",
+    "picture_url": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=373058122566124",
+    "cover_url": "https://scontent.example.com/v/cover_photo.jpg",
+    "link": "https://www.facebook.com/acmesoftware",
+    "website": "https://acme.example.com",
+    "followers_count": 4821,
+    "fan_count": 4653
+  },
+
+  "posts": [
+    {
+      "id": "373058122566124_987654321001",
+      "message": "🚀 Big news! Our v3.0 release is live. Faster builds, a new plugin system, and dark mode across the whole app. Try it free for 30 days — link in bio.",
+      "created_time": "2026-09-28T10:15:00Z",
+      "permalink_url": "https://www.facebook.com/acmesoftware/posts/987654321001",
+      "full_picture": "https://scontent.example.com/v/post_v3_launch.jpg",
+      "reactions_total": 312,
+      "reactions_breakdown": {
+        "like": 198,
+        "love": 87,
+        "haha": 3,
+        "wow": 22,
+        "sad": 1,
+        "angry": 1
+      },
+      "comments_count": 44,
+      "shares_count": 61,
+      "engagement_total": 417
+    },
+    {
+      "id": "373058122566124_987654321002",
+      "message": "Happy Monday! Here's a quick tip: use keyboard shortcut Ctrl+Shift+P to open the command palette in Acme IDE. What's your favourite shortcut?",
+      "created_time": "2026-09-22T08:00:00Z",
+      "permalink_url": "https://www.facebook.com/acmesoftware/posts/987654321002",
+      "full_picture": null,
+      "reactions_total": 89,
+      "reactions_breakdown": {
+        "like": 71,
+        "love": 9,
+        "haha": 5,
+        "wow": 2,
+        "sad": 1,
+        "angry": 1
+      },
+      "comments_count": 31,
+      "shares_count": 4,
+      "engagement_total": 124
+    },
+    {
+      "id": "373058122566124_987654321003",
+      "message": "We're hiring! Senior backend engineers (Go / Python). Fully remote, competitive salary. DM us or apply at acme.example.com/jobs.",
+      "created_time": "2026-09-18T14:30:00Z",
+      "permalink_url": "https://www.facebook.com/acmesoftware/posts/987654321003",
+      "full_picture": "https://scontent.example.com/v/post_hiring.jpg",
+      "reactions_total": 154,
+      "reactions_breakdown": {
+        "like": 120,
+        "love": 19,
+        "haha": 0,
+        "wow": 11,
+        "sad": 1,
+        "angry": 3
+      },
+      "comments_count": 22,
+      "shares_count": 38,
+      "engagement_total": 214
+    },
+    {
+      "id": "373058122566124_987654321004",
+      "message": "Behind the scenes: how we built our new plugin marketplace in 6 weeks. Full blog post now live on our website.",
+      "created_time": "2026-09-14T11:00:00Z",
+      "permalink_url": "https://www.facebook.com/acmesoftware/posts/987654321004",
+      "full_picture": "https://scontent.example.com/v/post_blog.jpg",
+      "reactions_total": 201,
+      "reactions_breakdown": {
+        "like": 145,
+        "love": 42,
+        "haha": 0,
+        "wow": 13,
+        "sad": 0,
+        "angry": 1
+      },
+      "comments_count": 18,
+      "shares_count": 27,
+      "engagement_total": 246
+    },
+    {
+      "id": "373058122566124_987654321005",
+      "message": "Quick poll: what's your biggest pain point when deploying software? 👇",
+      "created_time": "2026-09-09T09:00:00Z",
+      "permalink_url": "https://www.facebook.com/acmesoftware/posts/987654321005",
+      "full_picture": null,
+      "reactions_total": 43,
+      "reactions_breakdown": {
+        "like": 38,
+        "love": 2,
+        "haha": 1,
+        "wow": 0,
+        "sad": 2,
+        "angry": 0
+      },
+      "comments_count": 57,
+      "shares_count": 2,
+      "engagement_total": 102
+    },
+    {
+      "id": "373058122566124_987654321006",
+      "message": "Throwback to our team offsite in Lisbon 🇵🇹. Remote-first doesn't mean never-meet.",
+      "created_time": "2026-09-05T16:45:00Z",
+      "permalink_url": "https://www.facebook.com/acmesoftware/posts/987654321006",
+      "full_picture": "https://scontent.example.com/v/post_offsite.jpg",
+      "reactions_total": 278,
+      "reactions_breakdown": {
+        "like": 172,
+        "love": 89,
+        "haha": 6,
+        "wow": 8,
+        "sad": 2,
+        "angry": 1
+      },
+      "comments_count": 33,
+      "shares_count": 11,
+      "engagement_total": 322
+    },
+    {
+      "id": "373058122566124_987654321007",
+      "message": "New tutorial: setting up CI/CD with Acme in under 10 minutes. Watch on YouTube →",
+      "created_time": "2026-09-01T10:00:00Z",
+      "permalink_url": "https://www.facebook.com/acmesoftware/posts/987654321007",
+      "full_picture": "https://scontent.example.com/v/post_tutorial.jpg",
+      "reactions_total": 127,
+      "reactions_breakdown": {
+        "like": 98,
+        "love": 17,
+        "haha": 0,
+        "wow": 10,
+        "sad": 1,
+        "angry": 1
+      },
+      "comments_count": 14,
+      "shares_count": 19,
+      "engagement_total": 160
+    }
+  ],
+
+  "post_stats": {
+    "posts_analyzed": 7,
+    "avg_reactions": 172.0,
+    "avg_comments": 31.3,
+    "avg_shares": 23.1,
+    "avg_engagement": 226.4,
+    "best_post_id": "373058122566124_987654321001",
+    "worst_post_id": "373058122566124_987654321005",
+    "posts_per_week": 1.75,
+    "top_posting_days": ["Monday", "Sunday", "Thursday"],
+    "top_posting_hours": [10, 9, 14]
+  },
+
+  "insights": {
+    "reach": {
+      "available": true,
+      "period": "day",
+      "values": [
+        { "date": "2026-09-22", "value": 1840 },
+        { "date": "2026-09-23", "value": 920  },
+        { "date": "2026-09-24", "value": 611  },
+        { "date": "2026-09-25", "value": 530  },
+        { "date": "2026-09-26", "value": 487  },
+        { "date": "2026-09-27", "value": 812  },
+        { "date": "2026-09-28", "value": 5430 }
+      ],
+      "total": 10630
+    },
+    "impressions": {
+      "available": true,
+      "period": "day",
+      "values": [
+        { "date": "2026-09-22", "value": 3210 },
+        { "date": "2026-09-23", "value": 1540 },
+        { "date": "2026-09-24", "value": 1020 },
+        { "date": "2026-09-25", "value": 890  },
+        { "date": "2026-09-26", "value": 780  },
+        { "date": "2026-09-27", "value": 1340 },
+        { "date": "2026-09-28", "value": 9870 }
+      ],
+      "total": 18650
+    },
+    "engaged_users": {
+      "available": true,
+      "period": "day",
+      "values": [
+        { "date": "2026-09-22", "value": 312 },
+        { "date": "2026-09-23", "value": 98  },
+        { "date": "2026-09-24", "value": 54  },
+        { "date": "2026-09-25", "value": 47  },
+        { "date": "2026-09-26", "value": 41  },
+        { "date": "2026-09-27", "value": 88  },
+        { "date": "2026-09-28", "value": 730 }
+      ],
+      "total": 1370
+    },
+    "follower_growth": {
+      "available": true,
+      "period": "day",
+      "values": [
+        { "date": "2026-09-22", "value": 12 },
+        { "date": "2026-09-23", "value": 4  },
+        { "date": "2026-09-24", "value": 3  },
+        { "date": "2026-09-25", "value": 2  },
+        { "date": "2026-09-26", "value": 5  },
+        { "date": "2026-09-27", "value": 8  },
+        { "date": "2026-09-28", "value": 47 }
+      ],
+      "total": 81
+    },
+    "video_views": {
+      "available": false,
+      "period": null,
+      "values": null,
+      "total": null
+    }
+  },
+
+  "ai_analysis": {
+    "health_score": 72,
+    "health_summary": "Acme Software maintains a healthy and growing Facebook presence with strong engagement on product announcements and team culture posts. The v3.0 launch post significantly outperformed averages, signalling that the audience responds well to milestone moments. Posting frequency is moderate at ~1.75 posts per week, which leaves room to increase touchpoints without overwhelming followers.",
+    "engagement_trend": "improving",
+    "trend_explanation": "Engagement per post has risen in the last 30 days, driven primarily by the v3.0 launch and the Lisbon offsite posts, both of which far exceeded recent averages.",
+    "strengths": [
+      "Product launch posts generate exceptional engagement (417 total on v3.0 announcement)",
+      "Team culture content (offsite photos) resonates strongly with the audience",
+      "Consistent Monday morning posting aligns with peak audience activity",
+      "Job posts attract meaningful shares, extending organic reach"
+    ],
+    "weaknesses": [
+      "Poll and question posts underperform compared to image-backed content",
+      "Posting frequency of 1.75 posts/week is below optimal for sustained algorithmic reach",
+      "Video content is absent, limiting access to video-boosted distribution",
+      "No posts on Fridays or Saturdays despite reasonable audience activity on those days"
+    ],
+    "best_post_analysis": "The v3.0 launch post succeeded because it combined a concrete product milestone, a clear call to action, and an image — the three elements that consistently drive shares and reactions on this Page. Emoji use and the '30-day free trial' hook lowered the friction to engage.",
+    "worst_post_analysis": "The poll post had the lowest reactions and shares, likely because text-only posts receive less News Feed priority and the open-ended question format attracted comments but not the broader sharing behaviour that amplifies reach.",
+    "recommendations": [
+      {
+        "title": "Post at least 3 times per week",
+        "detail": "Moving from ~1.75 to 3 posts per week keeps the Page active in followers' feeds and gives the algorithm more surface area to distribute your content. Fill non-launch weeks with tips, behind-the-scenes, or short tutorials.",
+        "priority": "high"
+      },
+      {
+        "title": "Add short-form video content",
+        "detail": "Facebook's algorithm heavily favours native video. A 60-second screen recording of a feature walkthrough or a quick team clip would likely double impressions compared to a static image post.",
+        "priority": "high"
+      },
+      {
+        "title": "Pair every poll with a striking visual",
+        "detail": "Poll and question posts consistently underperform when text-only. Adding a bold graphic or relevant screenshot increases thumb-stopping rate and reactions significantly.",
+        "priority": "medium"
+      },
+      {
+        "title": "Repurpose blog posts as carousel images",
+        "detail": "The behind-the-scenes blog post performed well. Turning long-form content into 4–6 swipeable slides keeps users on the post longer, which the algorithm rewards.",
+        "priority": "medium"
+      },
+      {
+        "title": "Test Friday afternoon posting",
+        "detail": "No posts have been published on Fridays. The 2–4 PM UTC window on Fridays sees high leisure browsing — it is worth testing one post there to capture that audience.",
+        "priority": "low"
+      }
+    ],
+    "content_ideas": [
+      "\"Feature Friday\" — a weekly 45-second video showing one underused feature of Acme IDE",
+      "Customer spotlight: ask a happy user to share how they use Acme, then repost with their permission",
+      "\"Stat of the month\" graphic: one impressive usage number with minimal design",
+      "Open-source contribution roundup: celebrate external contributors by name",
+      "Day-in-the-life reel of a remote team member across different time zones"
+    ],
+    "best_time_to_post": "Weekdays (Monday & Thursday) between 9–11 AM UTC, when historical engagement on this Page peaks."
+  },
+
+  "meta": {
+    "generated_at": "2026-09-29T07:42:11Z",
+    "graph_api_version": "v22.0",
+    "gemini_model": "gemini-3.8-flash",
+    "warnings": [
+      "video_views insight unavailable: This metric requires Pages with active video content in the last 28 days."
+    ]
+  }
+}
