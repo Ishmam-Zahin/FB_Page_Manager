@@ -62,27 +62,27 @@ A full-stack, enterprise-grade Facebook Page management and analytics platform. 
 
 ```mermaid
 flowchart TD
-    User([User Browser]) -->|1. Sign in with Facebook| NextAuth[Next.js Frontend & Auth.js]
-    NextAuth -->|2. OAuth Callback & User Token| FBAuth[Meta Graph API OAuth]
+    User["User Browser"] -->|"1. Sign in with Facebook"| NextAuth["Next.js Frontend & Auth.js"]
+    NextAuth -->|"2. OAuth Callback & User Token"| FBAuth["Meta Graph API OAuth"]
     
-    User -->|3. View Page Dashboard| NextApp[Next.js Server Route]
-    NextApp -->|4. Authenticated Request (Token in Server Header)| FastApi[FastAPI Backend]
+    User -->|"3. View Page Dashboard"| NextApp["Next.js Server Route"]
+    NextApp -->|"4. Authenticated Request with Server Token"| FastApi["FastAPI Backend"]
     
-    FastApi -->|5. Verify Ownership & Exchange Page Token| GraphAPI[Meta Graph API v22.0]
-    GraphAPI -->|6. Metadata, Posts, Insights| FastApi
+    FastApi -->|"5. Verify Ownership & Exchange Page Token"| GraphAPI["Meta Graph API v22.0"]
+    GraphAPI -->|"6. Metadata, Posts, Insights"| FastApi
     
-    FastApi -->|7. Page Telemetry Payload| Gemini[Google Gemini 2.5 / 3.8 Flash]
-    Gemini -->|8. Structured Insights & Health Score| FastApi
+    FastApi -->|"7. Page Telemetry Payload"| Gemini["Google Gemini AI"]
+    Gemini -->|"8. Structured Insights & Health Score"| FastApi
     
-    FastApi -->|9. Unified JSON Contract| NextApp
-    NextApp -->|10. Render Reactive Dashboard| User
+    FastApi -->|"9. Unified JSON Contract"| NextApp
+    NextApp -->|"10. Render Reactive Dashboard"| User
 
-    User -->|11. Chatbot Query| NextChat[Frontend Chat API Proxy]
-    NextChat -->|12. Grounded Chat Request| FastApiChat[FastAPI Chat Service]
-    FastApiChat <-->|13. Fetch/Persist Last 5 Messages| Postgres[(PostgreSQL Database)]
-    FastApiChat -->|14. Grounded Prompt (Page Context + Messages)| GeminiChat[Google Gemini]
-    GeminiChat -->|15. Guardrailed Answer| FastApiChat
-    FastApiChat -->|16. Stream/Deliver Response| User
+    User -->|"11. Chatbot Query"| NextChat["Frontend Chat API Proxy"]
+    NextChat -->|"12. Grounded Chat Request"| FastApiChat["FastAPI Chat Service"]
+    FastApiChat <-->|"13. Fetch / Persist Last 5 Messages"| Postgres[("PostgreSQL Database")]
+    FastApiChat -->|"14. Grounded Prompt with Page Context"| GeminiChat["Google Gemini"]
+    GeminiChat -->|"15. Guardrailed Answer"| FastApiChat
+    FastApiChat -->|"16. Deliver Response"| User
 ```
 
 ---
