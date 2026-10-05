@@ -21,5 +21,7 @@ export default async function PageDashboard({ params }: PageProps) {
     redirect("/login")
   }
 
-  return <DashboardClient pageId={id} />
+  const userId = session.userId || session.user?.id || ""
+
+  return <DashboardClient pageId={id} userId={userId} />
 }

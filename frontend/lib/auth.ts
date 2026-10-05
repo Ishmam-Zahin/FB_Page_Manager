@@ -2,6 +2,7 @@ import NextAuth from "next-auth"
 import Facebook from "next-auth/providers/facebook"
 
 export const { handlers, auth, signIn, signOut } = NextAuth({
+  trustHost: true,
   secret: process.env.NEXTAUTH_SECRET,
   providers: [
     Facebook({
@@ -16,10 +17,16 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
     }),
   ],
   callbacks: {
-    async jwt({ token, account }) {
-      // Persist the Facebook user access token on first sign-in
+    async jwt({ token, account, profile }) {
+      // Persist the Facebook user access token and permanent Facebook User ID on first sign-in
       if (account?.access_token) {
         token.accessToken = account.access_token
+      }
+      // account.providerAccountId is the permanent Facebook User ID
+      if (account?.providerAccountId) {
+        token.userId = String(account.providerAccountId)
+      } else if (profile && "id" in profile && profile.id) {
+        token.userId = String(profile.id)
       }
       return token
     },
@@ -27,6 +34,12 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
       // Expose the access token to server-side code via `auth()`
       // It is NEVER sent to the client
       session.accessToken = token.accessToken
+      if (token.userId) {
+        session.userId = token.userId as string
+        if (session.user) {
+          session.user.id = token.userId as string
+        }
+      }
       return session
     },
   },

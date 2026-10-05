@@ -88,7 +88,7 @@ export function EngagementCharts({ posts }: EngagementChartsProps) {
         <div className="flex items-center p-1 rounded-xl bg-slate-950 border border-white/10 text-xs">
           <button
             onClick={() => setActiveTab("timeline")}
-            className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg font-medium transition-all ${
+            className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg font-medium transition-all cursor-pointer ${
               activeTab === "timeline"
                 ? "bg-blue-600 text-white shadow-sm"
                 : "text-slate-400 hover:text-slate-200"
@@ -99,7 +99,7 @@ export function EngagementCharts({ posts }: EngagementChartsProps) {
           </button>
           <button
             onClick={() => setActiveTab("breakdown")}
-            className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg font-medium transition-all ${
+            className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg font-medium transition-all cursor-pointer ${
               activeTab === "breakdown"
                 ? "bg-blue-600 text-white shadow-sm"
                 : "text-slate-400 hover:text-slate-200"

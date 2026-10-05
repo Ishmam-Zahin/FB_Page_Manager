@@ -35,7 +35,7 @@ export function AiInsightsCard({ analysis, geminiModel, onRetry }: AiInsightsCar
         {onRetry && (
           <button
             onClick={onRetry}
-            className="px-4 py-2 text-sm font-semibold rounded-xl bg-blue-600 hover:bg-blue-500 text-white transition-all shadow-lg shadow-blue-500/20 active:scale-95"
+            className="px-4 py-2 text-sm font-semibold rounded-xl bg-blue-600 hover:bg-blue-500 text-white transition-all shadow-lg shadow-blue-500/20 active:scale-95 cursor-pointer"
           >
             Retry Analysis
           </button>

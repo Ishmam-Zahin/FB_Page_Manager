@@ -14,6 +14,10 @@ class Settings(BaseSettings):
     graph_api_version: str = "v22.0"
     # Comma-separated list of allowed CORS origins
     allowed_origins: str = "http://localhost:3000"
+    # Neon PostgreSQL connection string (asyncpg)
+    database_url: str = ""
+    # Maximum previous conversation messages to send to LLM context
+    chat_history_limit: int = 5
 
     @property
     def allowed_origins_list(self) -> list[str]:

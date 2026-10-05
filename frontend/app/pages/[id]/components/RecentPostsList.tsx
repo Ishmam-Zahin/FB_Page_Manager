@@ -152,7 +152,7 @@ export function RecentPostsList({
                       href={post.permalink_url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-1 text-blue-400 hover:text-blue-300 text-[11px] font-medium hover:underline"
+                      className="inline-flex items-center gap-1 text-blue-400 hover:text-blue-300 text-[11px] font-medium hover:underline cursor-pointer"
                     >
                       <span>View post</span>
                       <ExternalLink className="w-3 h-3" />

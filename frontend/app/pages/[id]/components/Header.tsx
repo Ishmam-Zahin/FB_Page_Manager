@@ -18,7 +18,7 @@ export function Header({ page, meta, onRegenerate, isRegenerating, isMockData }:
       <div className="flex items-center justify-between">
         <Link
           href="/pages"
-          className="inline-flex items-center gap-2 text-sm font-medium text-slate-400 hover:text-white transition-colors group px-3 py-1.5 rounded-lg hover:bg-slate-900 border border-transparent hover:border-white/10"
+          className="inline-flex items-center gap-2 text-sm font-medium text-slate-400 hover:text-white transition-colors group px-3 py-1.5 rounded-lg hover:bg-slate-900 border border-transparent hover:border-white/10 cursor-pointer"
         >
           <ArrowLeft className="w-4 h-4 transition-transform group-hover:-translate-x-0.5" />
           <span>Back to Pages</span>
@@ -33,7 +33,7 @@ export function Header({ page, meta, onRegenerate, isRegenerating, isMockData }:
           <button
             onClick={onRegenerate}
             disabled={isRegenerating}
-            className="inline-flex items-center gap-2 px-3.5 py-2 text-sm font-medium rounded-xl bg-slate-900 hover:bg-slate-850 text-slate-200 hover:text-white border border-white/10 hover:border-white/20 transition-all shadow-sm active:scale-98 disabled:opacity-50"
+            className="inline-flex items-center gap-2 px-3.5 py-2 text-sm font-medium rounded-xl bg-slate-900 hover:bg-slate-850 text-slate-200 hover:text-white border border-white/10 hover:border-white/20 transition-all shadow-sm active:scale-98 disabled:opacity-50 cursor-pointer disabled:cursor-not-allowed"
             title="Refresh dashboard data and regenerate AI analysis"
           >
             <RefreshCw className={`w-4 h-4 text-blue-400 ${isRegenerating ? "animate-spin" : ""}`} />
@@ -98,7 +98,7 @@ export function Header({ page, meta, onRegenerate, isRegenerating, isMockData }:
                     href={page.link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-1.5 text-blue-400 hover:text-blue-300 hover:underline"
+                    className="inline-flex items-center gap-1.5 text-blue-400 hover:text-blue-300 hover:underline cursor-pointer"
                   >
                     <span>facebook.com/{page.id}</span>
                     <ExternalLink className="w-3 h-3" />
@@ -109,7 +109,7 @@ export function Header({ page, meta, onRegenerate, isRegenerating, isMockData }:
                     href={page.website.startsWith("http") ? page.website : `https://${page.website}`}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-1.5 text-slate-300 hover:text-white hover:underline"
+                    className="inline-flex items-center gap-1.5 text-slate-300 hover:text-white hover:underline cursor-pointer"
                   >
                     <Globe className="w-3.5 h-3.5 text-slate-400" />
                     <span>{page.website.replace(/^https?:\/\//, "")}</span>

@@ -11,13 +11,15 @@ import { EngagementCharts } from "./components/EngagementCharts"
 import { PageInsightsSection } from "./components/PageInsightsSection"
 import { RecentPostsList } from "./components/RecentPostsList"
 import { DashboardSkeleton } from "./components/DashboardSkeleton"
+import { ChatBot } from "./components/ChatBot"
 
 interface DashboardClientProps {
   pageId: string
+  userId?: string
   initialData?: DashboardResponse | null
 }
 
-export function DashboardClient({ pageId, initialData = null }: DashboardClientProps) {
+export function DashboardClient({ pageId, userId, initialData = null }: DashboardClientProps) {
   const [data, setData] = useState<DashboardResponse | null>(initialData)
   const [loading, setLoading] = useState<boolean>(!initialData)
   const [error, setError] = useState<string | null>(null)
@@ -85,7 +87,7 @@ export function DashboardClient({ pageId, initialData = null }: DashboardClientP
                 setLoading(true)
                 fetchDashboard(false)
               }}
-              className="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-blue-600 hover:bg-blue-500 font-semibold text-sm transition-all shadow-lg shadow-blue-500/25 active:scale-98"
+              className="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-blue-600 hover:bg-blue-500 font-semibold text-sm transition-all shadow-lg shadow-blue-500/25 active:scale-98 cursor-pointer"
             >
               <RefreshCw className="w-4 h-4" />
               <span>Retry Request</span>
@@ -96,7 +98,7 @@ export function DashboardClient({ pageId, initialData = null }: DashboardClientP
                 setLoading(true)
                 fetchDashboard(true)
               }}
-              className="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 font-medium text-sm text-slate-200 border border-white/10 transition-all active:scale-98"
+              className="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 font-medium text-sm text-slate-200 border border-white/10 transition-all active:scale-98 cursor-pointer"
             >
               <Sparkles className="w-4 h-4 text-amber-400" />
               <span>Preview with Demo Mock Data</span>
@@ -104,7 +106,7 @@ export function DashboardClient({ pageId, initialData = null }: DashboardClientP
 
             <Link
               href="/pages"
-              className="inline-flex items-center justify-center gap-2 text-xs text-slate-400 hover:text-slate-200 pt-2 transition-colors"
+              className="inline-flex items-center justify-center gap-2 text-xs text-slate-400 hover:text-slate-200 pt-2 transition-colors cursor-pointer"
             >
               <ArrowLeft className="w-3.5 h-3.5" />
               <span>Return to Pages List</span>
@@ -150,6 +152,13 @@ export function DashboardClient({ pageId, initialData = null }: DashboardClientP
           worstPostId={data.post_stats.worst_post_id}
         />
       </div>
+
+      {/* Floating Chatbot Assistant */}
+      <ChatBot
+        pageId={pageId}
+        userId={userId || ""}
+        pageContent={data}
+      />
     </div>
   )
 }

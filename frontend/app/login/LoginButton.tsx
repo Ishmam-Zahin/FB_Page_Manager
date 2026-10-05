@@ -20,6 +20,7 @@ export function LoginButton() {
       className="
         flex items-center justify-center gap-3 w-full
         bg-[#1877f2] hover:bg-[#166fe5] active:bg-[#1464d8]
+        cursor-pointer
         disabled:opacity-60 disabled:cursor-not-allowed
         text-white font-semibold text-base
         px-6 py-3.5 rounded-xl

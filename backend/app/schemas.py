@@ -135,3 +135,42 @@ class DashboardResponse(BaseModel):
     insights: PageInsights
     ai_analysis: Optional[AiAnalysis] = None
     meta: ResponseMeta
+
+
+# ---------------------------------------------------------------------------
+# Chat DTOs
+# ---------------------------------------------------------------------------
+
+
+class ChatRequest(BaseModel):
+    """Incoming chat request from frontend proxy."""
+    page_id: str
+    user_id: str
+    conversation_id: Optional[str] = None  # null = new conversation
+    user_query: str
+    page_content: DashboardResponse  # full dashboard data as context
+    model: str  # Gemini model identifier (e.g. "gemini-2.5-flash")
+
+
+class ChatMessageOut(BaseModel):
+    """Single message in a conversation."""
+    id: str
+    user_query: str
+    llm_response: str
+    created_at: str  # ISO 8601
+
+
+class ChatResponse(BaseModel):
+    """Response returned after asking a question."""
+    conversation_id: str
+    title: str
+    user_query: str
+    llm_response: str
+
+
+class ConversationOut(BaseModel):
+    """Summary of a conversation for the history list."""
+    id: str
+    title: str
+    page_id: str
+    created_at: str  # ISO 8601
